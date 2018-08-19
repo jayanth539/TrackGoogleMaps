@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     locationObject.setLatitude(String.valueOf(dataSnapshot.getValue(Location.class).getLatitude()));
                     locationObject.setLongitude(String.valueOf(dataSnapshot.getValue(Location.class).getLongitude()));
                     */
+                   LocationObject lo = new LocationObject();
                  LocationObject locationThis = dataSnapshot.getValue(LocationObject.class);
                 Log.d("onDataChange",locationThis.toString());
                 Intent mapsIntent = new Intent(Intent.ACTION_VIEW);
